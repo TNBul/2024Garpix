@@ -32,11 +32,12 @@ def shmain(data_list):
 	masked_key_iter = chain(*map(lambda comb_len: #~2^(n-1)
 		combinations(map(lambda x: x[1], density_list), comb_len), range(1,len(density_list)))
 	) 
-	# print(f"{list(masked_key_iter) = }")
+	# print(f"{list(masked_key_iter) = }") #comment to preserve iter
 	print(f"{density_list = }")
 
 	for key_tuple in masked_key_iter:
 		if are_all_unique(map(dict_freezer(key_tuple), data_list)):
+			print("Success!")
 			return ",\n".join(key_tuple)
 	else:
 		print(f"Search unseccessful; return all keys")
