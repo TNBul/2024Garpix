@@ -8,5 +8,5 @@
 # Схема
 ! [scheme][image]
 
-[scheme]: https://github.com/TNBul/2024Garpix/blob/main/diagram.json
+
 [image]: https://github.com/TNBul/2024Garpix/blob/main/diagram.png
