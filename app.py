@@ -23,7 +23,7 @@ def main(json_str = None, json_file_path = "data.json"):
 	data_list = json.loads(json_str)
 	return shmain(data_list)
 
-@silencer(False)
+@silencer(True)
 def shmain(data_list):
 	#ordering data; optimizing time by calculating key density
 	print(f"{data_list = }")
